@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel">
+    <meta name="description" content="Revisão de HTML">
+    <meta name="keywords" content="sites, web, tags, html">
+    <title>Primeira Página</title>
+</head>
+
+<body background="./Thumb_Baiacu.jpeg" text="#05f75a">
+    <!-- este é um comentário -->
+
+    <header>
+        <h1 id="titulo1">Este é o primeiro título</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <h2>Este é um título secundário</h2>
+        <p>
+            Este é um paragráfo com
+            <strong>text em negrito</strong>
+            <i>itálico</i>
+            <del>excluído</del>
+            <small>pequeno</small>
+            <q>aspas ou citação</q>
+            <mark>marcação</mark>
+            <sub>subscrito</sub>
+            <sup>superescrito</sup>
+            <abbr title="hypertext markup language"> HTML abreviado </abbr>
+            <u>sublinhado</u>
+        </p>
+
+        <br>
+        <p>
+            este é outro paragráfo com uma lista ordenada
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <table border="1">
+            <p>Esta é uma tabela</p>
+            <thead>
+                <tr>
+                    <th>Nome Pessoa</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Carlao</td>
+                    <td>carlaolagadasso@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>GB</td>
+                    <td>gbautopecas@gmail.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total de pessoas: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h3>Título 3</h3>
+        <p>Este é um bloco de texto sem o pre</p>
+        <pre>Este é um bloco de texto pré-formatado</pre>
+    </section>
+
+    <section>
+        <h4>Título 4</h4>
+        <p>Usando caracteres para fazer a tabulação</p>
+        <p>&nbsp;*usando um caracter de tabulação</p>
+        <p>&ensp;*usando dois caracteres de tabulação</p>
+        <p>&emsp;*usando três caracteres de tabulação</p>
+    </section>
+
+    <section>
+        <h5>Título 5</h5>
+        <p>Exemplos de Links</p>
+        <a href="https://www.youtube.com/watch?v=hwJve1x1Dow">Gaucho consertando carro</a>
+        <br>
+        <a href="mailto:natalyroch12013@gmail.com">Envie um email para a Nataly</a>
+        <p> Links Plus
+            As cores no link podem ser mudadas com os comandos link (CordonsLinks),
+            alink (cor do link que foi pressionado), evlink (cor de um link ja visitado),
+            podem ser colocados no BODY.
+        </p>
+    </section>
+
+    <section>
+        <h6>Título 6</h6>
+        <p> Exemplo de imagens</p>
+        <figure>
+            <img src="data:image/jpeg;base64,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"
+                alt="Um herói destemido" title="PauloImagem" width="150" height="150" />
+        </figure>
+    </section>
+
+    <footer>
+        <a href="#titulo1"> Exemplo de âncora - link para o item 1</a>
+        <p>Aula pweb - 2023</p>
+    </footer>
+
+</body>
+
+</html>
