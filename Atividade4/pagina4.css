@@ -1,0 +1,83 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divHeader {
+    width: 40%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+    background-color: #F5F28A;
+    border-radius: 30px;
+}
+
+body {
+    background-image: url("http://d3ugyf2ht6aenh.cloudfront.net/stores/438/755/products/dpca220-58x58cm1-0b5502dc6b391f3a5e16400104988943-640-0.jpg");
+}
+
+.bloco {
+    position: absolute;
+    background-color: rgb(171, 219, 238);
+    border: 1px solid #C9BC8F;
+    margin: 10px 10px 0 1000px;
+    padding: 10px;
+    width: 260px;
+    border-radius: 20px;
+}
+
+.flex-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lanche {
+    margin: 0 0 10px 0;
+    padding: 0.3rem;
+    background-color: #F5F28A;
+    font: 1rem 'Fira Sans', sans-serif;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.lanche > h1,
+.lanche-dados {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+}
+
+.lanche-dados {
+    background-color: #D4D4D4;
+    height: 220px;
+    border-bottom: solid 2px blue;
+    border-top: dotted 2px green;
+}
+
+.lanche-dados > h2 {
+    margin: 0.2rem 0 10px 0;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.lanche-dados > p {
+    margin: 0.2rem;
+    font-size: 1rem;
+    word-spacing: 1px;
+    text-align: justify;
+}
+
+.img-lanche{
+    border: 1.5px solid black;
+    height: 170px;
+    width: 170px;
+    float: left;
+    margin: 0 10px 0 0;
+}
