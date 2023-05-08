@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Classes </title>
+</head>
+
+<body>
+
+    <script>
+        {
+            class Retangulo {
+                constructor(altura, largura) {
+                    this.altura = altura;
+                    this.largura = largura;
+                }
+
+                calculaArea() {
+                    return this.altura * this.largura;
+                }
+            }
+
+            objRetangulo = new Retangulo(10, 5);
+
+            alert(objRetangulo.calculaArea());
+
+        }
+
+        class Animal {
+            constructor(nome){
+                this.nome = nome;
+            }
+            som() {
+                alert(this.nome + ' emite som ');
+            }
+        }
+
+        class Galinha extends Animal {
+            som() {
+                alert(this.nome + ' cacareja ')
+            }
+
+        }
+
+        class GalinhaAngola extends Animal {
+            som() {
+                alert(this.nome + ' fala to fraco')
+            }
+        }
+
+        var objGalinha = new Galinha('Leka');
+        objGalinha.som();
+
+        var objGalinha2 = new GalinhaAngola('Pintadinha');
+        objGalinha2.som();
+    </script>
+
+</body>
+
+</html>
