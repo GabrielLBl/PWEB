@@ -2,7 +2,7 @@ function validar() {
     var nome = document.forms.formulario.nome.value;
     var email = document.forms.formulario.email.value;
     var comentario = document.forms.formulario.comentario.value;
-
+    var pesquisa = document.querySelector('input[name="radiob"]:checked');
 
     if (nome.length < 10) {
         alert("Nome não pode ter menos que 10 caracteres.");
@@ -19,16 +19,24 @@ function validar() {
         return false;
     }
 
-    if (!radiob) {
+    if (!pesquisa) {
         alert("Pesquisa é obrigatória.");
         return false;
     }
 
-    if (radiob === "nao") {
+    if (pesquisa.id === "nao") {
         alert("Que bom que você voltou a visitar esta página!");
     } else {
         alert("Volte sempre a esta página!");
     }
 
     return true;
+}
+
+function limpar() {
+    document.forms.formulario.reset();
+    var radioButtons = document.querySelectorAll('input[name="radiob"]');
+    radioButtons.forEach(function(radio) {
+        radio.checked = false;
+    });
 }
